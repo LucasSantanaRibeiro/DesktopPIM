@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopPIM", "DesktopPIM\DesktopPIM.csproj", "{D696F092-C6D2-481D-B8FE-425F90997644}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D696F092-C6D2-481D-B8FE-425F90997644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D696F092-C6D2-481D-B8FE-425F90997644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D696F092-C6D2-481D-B8FE-425F90997644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D696F092-C6D2-481D-B8FE-425F90997644}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B4E0244-2B65-401F-9165-D65A945EC6D0}
+	EndGlobalSection
+EndGlobal
