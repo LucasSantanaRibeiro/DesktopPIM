@@ -14,7 +14,7 @@ namespace DesktopPIM
     public partial class FazendaTech : Form
     {
 
-        string conectarBD = "Server=LAPTOP-UJ4JFIKG;Database=master;User Id=mauro; Password=123456";
+        string conectarBD = "Server=fazendatech.database.windows.net;Database=Fazendatech;User Id=fazendatech; Password=Fazenda123";
         public FazendaTech()
         {
             InitializeComponent();
