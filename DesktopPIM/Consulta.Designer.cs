@@ -1,6 +1,6 @@
 ﻿namespace DesktopPIM
 {
-    partial class Gerenciamento
+    partial class Consulta
     {
         /// <summary>
         /// Required designer variable.

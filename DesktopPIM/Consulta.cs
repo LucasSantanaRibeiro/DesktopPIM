@@ -11,18 +11,18 @@ using System.Windows.Forms;
 
 namespace DesktopPIM
 {
-    public partial class Gerenciamento : Form
+    public partial class Consulta : Form
     {
 
         string conectarBD = "Server=fazendatech.database.windows.net;Database=Fazendatech;User Id=fazendatech; Password=Fazenda123";
 
-        public Gerenciamento()
+        public Consulta()
         {
             InitializeComponent();
-            this.FormClosed += Gerenciamento_FormClosed;
+            this.FormClosed += Consulta_FormClosed;
         }
 
-        private void Gerenciamento_FormClosed(object sender, FormClosedEventArgs e)
+        private void Consulta_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
@@ -44,6 +44,8 @@ namespace DesktopPIM
                     string query = "SELECT * FROM Produto where ID_produto=" + id;
                     SqlCommand comando = new SqlCommand(query, conexao);
                     SqlDataReader leitor = comando.ExecuteReader();
+
+                    if ()
 
                     while (leitor.Read())
                     {

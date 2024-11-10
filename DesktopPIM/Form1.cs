@@ -55,8 +55,8 @@ namespace DesktopPIM
                         if (usuario == usuarioBD && senha == senhaBD)
                         {
                             MessageBox.Show("Login Concluido");
-                            Gerenciamento gerenciamento = new Gerenciamento();
-                            gerenciamento.Show();
+                            Menu menu = new Menu();
+                            menu.Show();
                             this.Hide();
                             loginValido = true;
                             break;
