@@ -30,8 +30,8 @@ namespace DesktopPIM
 
         private void botaoConsulta_Click(object sender, EventArgs e)
         {
-            Consulta consulta = new Consulta();
-            consulta.Show();
+            Gerenciamento gerenciamento = new Gerenciamento();
+            gerenciamento.Show();
             this.Hide();
         }
     }

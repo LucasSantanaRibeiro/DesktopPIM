@@ -1,6 +1,6 @@
 ﻿namespace DesktopPIM
 {
-    partial class Consulta
+    partial class Gerenciamento
     {
         /// <summary>
         /// Required designer variable.
@@ -40,7 +40,17 @@
             this.mostrarPrecoProduto = new System.Windows.Forms.Label();
             this.mostrarDescProduto = new System.Windows.Forms.Label();
             this.mostrarQuantidadeProduto = new System.Windows.Forms.Label();
+            this.alterarNomeTexto = new System.Windows.Forms.TextBox();
+            this.alterarNomeBotao = new System.Windows.Forms.Button();
+            this.alterarPrecoBotao = new System.Windows.Forms.Button();
+            this.alterarPrecoTexto = new System.Windows.Forms.TextBox();
+            this.alterarDescBotao = new System.Windows.Forms.Button();
+            this.alterarDescTexto = new System.Windows.Forms.TextBox();
+            this.alterarQtdBotao = new System.Windows.Forms.Button();
+            this.alterarQtdTexto = new System.Windows.Forms.TextBox();
+            this.mostrarImagem = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarImagem)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -61,7 +71,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(533, 27);
+            this.label1.Location = new System.Drawing.Point(498, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 23);
             this.label1.TabIndex = 7;
@@ -69,7 +79,8 @@
             // 
             // idProduto
             // 
-            this.idProduto.Location = new System.Drawing.Point(537, 53);
+            this.idProduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.idProduto.Location = new System.Drawing.Point(502, 86);
             this.idProduto.Name = "idProduto";
             this.idProduto.Size = new System.Drawing.Size(124, 20);
             this.idProduto.TabIndex = 8;
@@ -78,7 +89,7 @@
             // botaoPesquisa
             // 
             this.botaoPesquisa.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoPesquisa.Location = new System.Drawing.Point(537, 99);
+            this.botaoPesquisa.Location = new System.Drawing.Point(502, 132);
             this.botaoPesquisa.Name = "botaoPesquisa";
             this.botaoPesquisa.Size = new System.Drawing.Size(124, 39);
             this.botaoPesquisa.TabIndex = 9;
@@ -91,7 +102,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(70, 256);
+            this.label2.Location = new System.Drawing.Point(71, 256);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(162, 23);
             this.label2.TabIndex = 10;
@@ -102,7 +113,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(69, 319);
+            this.label3.Location = new System.Drawing.Point(71, 355);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(163, 23);
             this.label3.TabIndex = 12;
@@ -113,7 +124,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(69, 379);
+            this.label4.Location = new System.Drawing.Point(67, 447);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(199, 23);
             this.label4.TabIndex = 14;
@@ -124,7 +135,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(66, 443);
+            this.label5.Location = new System.Drawing.Point(64, 550);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(202, 23);
             this.label5.TabIndex = 16;
@@ -135,7 +146,7 @@
             this.mostrarNomeProduto.AutoSize = true;
             this.mostrarNomeProduto.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mostrarNomeProduto.ForeColor = System.Drawing.Color.White;
-            this.mostrarNomeProduto.Location = new System.Drawing.Point(289, 256);
+            this.mostrarNomeProduto.Location = new System.Drawing.Point(269, 256);
             this.mostrarNomeProduto.Name = "mostrarNomeProduto";
             this.mostrarNomeProduto.Size = new System.Drawing.Size(61, 23);
             this.mostrarNomeProduto.TabIndex = 17;
@@ -147,7 +158,7 @@
             this.mostrarPrecoProduto.AutoSize = true;
             this.mostrarPrecoProduto.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mostrarPrecoProduto.ForeColor = System.Drawing.Color.White;
-            this.mostrarPrecoProduto.Location = new System.Drawing.Point(289, 319);
+            this.mostrarPrecoProduto.Location = new System.Drawing.Point(275, 355);
             this.mostrarPrecoProduto.Name = "mostrarPrecoProduto";
             this.mostrarPrecoProduto.Size = new System.Drawing.Size(62, 23);
             this.mostrarPrecoProduto.TabIndex = 18;
@@ -159,7 +170,7 @@
             this.mostrarDescProduto.AutoSize = true;
             this.mostrarDescProduto.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mostrarDescProduto.ForeColor = System.Drawing.Color.White;
-            this.mostrarDescProduto.Location = new System.Drawing.Point(289, 379);
+            this.mostrarDescProduto.Location = new System.Drawing.Point(275, 447);
             this.mostrarDescProduto.Name = "mostrarDescProduto";
             this.mostrarDescProduto.Size = new System.Drawing.Size(55, 23);
             this.mostrarDescProduto.TabIndex = 19;
@@ -171,19 +182,113 @@
             this.mostrarQuantidadeProduto.AutoSize = true;
             this.mostrarQuantidadeProduto.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mostrarQuantidadeProduto.ForeColor = System.Drawing.Color.White;
-            this.mostrarQuantidadeProduto.Location = new System.Drawing.Point(289, 443);
+            this.mostrarQuantidadeProduto.Location = new System.Drawing.Point(275, 550);
             this.mostrarQuantidadeProduto.Name = "mostrarQuantidadeProduto";
             this.mostrarQuantidadeProduto.Size = new System.Drawing.Size(43, 23);
             this.mostrarQuantidadeProduto.TabIndex = 20;
             this.mostrarQuantidadeProduto.Text = "Qtd";
             this.mostrarQuantidadeProduto.Visible = false;
             // 
+            // alterarNomeTexto
+            // 
+            this.alterarNomeTexto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.alterarNomeTexto.Location = new System.Drawing.Point(74, 305);
+            this.alterarNomeTexto.Name = "alterarNomeTexto";
+            this.alterarNomeTexto.Size = new System.Drawing.Size(161, 20);
+            this.alterarNomeTexto.TabIndex = 21;
+            // 
+            // alterarNomeBotao
+            // 
+            this.alterarNomeBotao.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alterarNomeBotao.Location = new System.Drawing.Point(260, 295);
+            this.alterarNomeBotao.Name = "alterarNomeBotao";
+            this.alterarNomeBotao.Size = new System.Drawing.Size(107, 34);
+            this.alterarNomeBotao.TabIndex = 22;
+            this.alterarNomeBotao.Text = "Alterar";
+            this.alterarNomeBotao.UseVisualStyleBackColor = true;
+            this.alterarNomeBotao.Click += new System.EventHandler(this.alterarNomeBotao_Click);
+            // 
+            // alterarPrecoBotao
+            // 
+            this.alterarPrecoBotao.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alterarPrecoBotao.Location = new System.Drawing.Point(257, 386);
+            this.alterarPrecoBotao.Name = "alterarPrecoBotao";
+            this.alterarPrecoBotao.Size = new System.Drawing.Size(107, 34);
+            this.alterarPrecoBotao.TabIndex = 24;
+            this.alterarPrecoBotao.Text = "Alterar";
+            this.alterarPrecoBotao.UseVisualStyleBackColor = true;
+            this.alterarPrecoBotao.Click += new System.EventHandler(this.alterarPrecoBotao_Click);
+            // 
+            // alterarPrecoTexto
+            // 
+            this.alterarPrecoTexto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.alterarPrecoTexto.Location = new System.Drawing.Point(71, 396);
+            this.alterarPrecoTexto.Name = "alterarPrecoTexto";
+            this.alterarPrecoTexto.Size = new System.Drawing.Size(161, 20);
+            this.alterarPrecoTexto.TabIndex = 23;
+            // 
+            // alterarDescBotao
+            // 
+            this.alterarDescBotao.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alterarDescBotao.Location = new System.Drawing.Point(257, 490);
+            this.alterarDescBotao.Name = "alterarDescBotao";
+            this.alterarDescBotao.Size = new System.Drawing.Size(107, 34);
+            this.alterarDescBotao.TabIndex = 26;
+            this.alterarDescBotao.Text = "Alterar";
+            this.alterarDescBotao.UseVisualStyleBackColor = true;
+            this.alterarDescBotao.Click += new System.EventHandler(this.alterarDescBotao_Click);
+            // 
+            // alterarDescTexto
+            // 
+            this.alterarDescTexto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.alterarDescTexto.Location = new System.Drawing.Point(71, 500);
+            this.alterarDescTexto.Name = "alterarDescTexto";
+            this.alterarDescTexto.Size = new System.Drawing.Size(161, 20);
+            this.alterarDescTexto.TabIndex = 25;
+            // 
+            // alterarQtdBotao
+            // 
+            this.alterarQtdBotao.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alterarQtdBotao.Location = new System.Drawing.Point(257, 593);
+            this.alterarQtdBotao.Name = "alterarQtdBotao";
+            this.alterarQtdBotao.Size = new System.Drawing.Size(107, 34);
+            this.alterarQtdBotao.TabIndex = 28;
+            this.alterarQtdBotao.Text = "Alterar";
+            this.alterarQtdBotao.UseVisualStyleBackColor = true;
+            this.alterarQtdBotao.Click += new System.EventHandler(this.alterarQtdBotao_Click);
+            // 
+            // alterarQtdTexto
+            // 
+            this.alterarQtdTexto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.alterarQtdTexto.Location = new System.Drawing.Point(71, 603);
+            this.alterarQtdTexto.Name = "alterarQtdTexto";
+            this.alterarQtdTexto.Size = new System.Drawing.Size(161, 20);
+            this.alterarQtdTexto.TabIndex = 27;
+            // 
+            // mostrarImagem
+            // 
+            this.mostrarImagem.Location = new System.Drawing.Point(524, 218);
+            this.mostrarImagem.Name = "mostrarImagem";
+            this.mostrarImagem.Size = new System.Drawing.Size(489, 460);
+            this.mostrarImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.mostrarImagem.TabIndex = 29;
+            this.mostrarImagem.TabStop = false;
+            // 
             // Gerenciamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.ClientSize = new System.Drawing.Size(1041, 585);
+            this.ClientSize = new System.Drawing.Size(1066, 867);
+            this.Controls.Add(this.mostrarImagem);
+            this.Controls.Add(this.alterarQtdBotao);
+            this.Controls.Add(this.alterarQtdTexto);
+            this.Controls.Add(this.alterarDescBotao);
+            this.Controls.Add(this.alterarDescTexto);
+            this.Controls.Add(this.alterarPrecoBotao);
+            this.Controls.Add(this.alterarPrecoTexto);
+            this.Controls.Add(this.alterarNomeBotao);
+            this.Controls.Add(this.alterarNomeTexto);
             this.Controls.Add(this.mostrarQuantidadeProduto);
             this.Controls.Add(this.mostrarDescProduto);
             this.Controls.Add(this.mostrarPrecoProduto);
@@ -199,6 +304,7 @@
             this.Name = "Gerenciamento";
             this.Text = "Gerenciamento";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarImagem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,5 +324,14 @@
         private System.Windows.Forms.Label mostrarPrecoProduto;
         private System.Windows.Forms.Label mostrarDescProduto;
         private System.Windows.Forms.Label mostrarQuantidadeProduto;
+        private System.Windows.Forms.TextBox alterarNomeTexto;
+        private System.Windows.Forms.Button alterarNomeBotao;
+        private System.Windows.Forms.Button alterarPrecoBotao;
+        private System.Windows.Forms.TextBox alterarPrecoTexto;
+        private System.Windows.Forms.Button alterarDescBotao;
+        private System.Windows.Forms.TextBox alterarDescTexto;
+        private System.Windows.Forms.Button alterarQtdBotao;
+        private System.Windows.Forms.TextBox alterarQtdTexto;
+        private System.Windows.Forms.PictureBox mostrarImagem;
     }
 }

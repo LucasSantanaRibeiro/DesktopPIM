@@ -16,7 +16,7 @@ namespace DesktopPIM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FazendaTech());
+            Application.Run(new Gerenciamento());
         }
     }
 }
