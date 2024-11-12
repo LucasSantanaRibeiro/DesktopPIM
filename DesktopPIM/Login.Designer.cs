@@ -86,7 +86,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.BackColor = System.Drawing.Color.DimGray;
             this.Controls.Add(this.botaoLogin);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.campoSenha);

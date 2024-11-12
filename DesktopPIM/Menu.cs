@@ -34,5 +34,19 @@ namespace DesktopPIM
             gerenciamento.Show();
             this.Hide();
         }
+
+        private void botaoGerenciamentoAdm_Click(object sender, EventArgs e)
+        {
+            GerenciamentoAdm gerenciamentoadm = new GerenciamentoAdm();
+            gerenciamentoadm.Show();
+            this.Hide();
+        }
+
+        private void botaoRelatorio_Click(object sender, EventArgs e)
+        {
+            Produtos produtos = new Produtos();
+            produtos.Show();
+            this.Hide();
+        }
     }
 }

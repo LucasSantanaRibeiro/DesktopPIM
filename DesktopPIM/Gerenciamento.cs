@@ -4,10 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace DesktopPIM
 {
@@ -157,6 +159,112 @@ namespace DesktopPIM
             }
         }
 
-     
+        private void Gerenciamento_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void botaoAdicionar_Click(object sender, EventArgs e)
+        {
+
+            String nome = adicionarNome.Text;
+            String desc = adicionarDesc.Text;
+            String imagem = adicionarImagem.Text;
+            int id; int.TryParse(adicionarID.Text, out id);
+            float preco; float.TryParse(adicionarPreco.Text, NumberStyles.Float, CultureInfo.InvariantCulture, out preco);
+            int qtd; int.TryParse(adicionarQtd.Text, out qtd);
+
+            using (SqlConnection conexao = new SqlConnection(conectarBD))
+            {
+                try
+                {
+                    conexao.Open();
+                    string query = "INSERT INTO Produto (ID_produto, nome, preco, descricao, qtd_disponivel, imagem) VALUES (@id, @nome, @preco, @descricao, @qtd_disponivel, @imagem)";
+                    SqlCommand comando = new SqlCommand(query, conexao);
+
+                    comando.Parameters.AddWithValue("@id", id);
+                    comando.Parameters.AddWithValue("@nome", nome);
+                    comando.Parameters.AddWithValue("@preco", preco);
+                    comando.Parameters.AddWithValue("@descricao", desc);
+                    comando.Parameters.AddWithValue("@qtd_disponivel", qtd);
+                    comando.Parameters.AddWithValue("@imagem", imagem);
+
+                    int linhasAfetadas = comando.ExecuteNonQuery();
+
+                    if (linhasAfetadas > 0)
+                    {
+                    MessageBox.Show("Produto adicionado com sucesso!");
+                    adicionarNome.Clear();
+                    adicionarDesc.Clear();
+                    adicionarImagem.Clear();
+                    adicionarID.Clear();
+                    adicionarPreco.Clear();
+                    adicionarQtd.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Algo deu errado. Verifique os dados.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}");
+                }
+            }
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void botaoExcluir_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Você tem certeza que deseja excluir este produto?","Confirmar Exclusão",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.Yes)
+            {
+                try
+                {
+                    string id = idProduto.Text;
+
+                    using (SqlConnection conexao = new SqlConnection(conectarBD))
+                    {
+                        conexao.Open();
+
+                        string query = "DELETE FROM Produto WHERE ID_produto = @id";
+                        SqlCommand comando = new SqlCommand(query, conexao);
+                        comando.Parameters.AddWithValue("@id", id);
+
+                        int linhasAfetadas = comando.ExecuteNonQuery();
+
+                        if (linhasAfetadas > 0)
+                        {
+                            MessageBox.Show("Produto excluído com sucesso!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Produto não encontrado ou não foi possível excluir.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show($"Error: {ex.Message}");
+                }
+            }
+            else
+            {
+                MessageBox.Show("A exclusão foi cancelada.");
+            }
+        }
+
+        private void botaoVoltar_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Hide();
+        }
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.idProduto = new System.Windows.Forms.TextBox();
             this.botaoPesquisa = new System.Windows.Forms.Button();
@@ -49,29 +48,35 @@
             this.alterarQtdBotao = new System.Windows.Forms.Button();
             this.alterarQtdTexto = new System.Windows.Forms.TextBox();
             this.mostrarImagem = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.adicionarQtd = new System.Windows.Forms.TextBox();
+            this.adicionarDesc = new System.Windows.Forms.TextBox();
+            this.botaoAdicionar = new System.Windows.Forms.Button();
+            this.adicionarPreco = new System.Windows.Forms.TextBox();
+            this.adicionarNome = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.adicionarImagem = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.adicionarID = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.botaoExcluir = new System.Windows.Forms.Button();
+            this.botaoVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarImagem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::DesktopPIM.Properties.Resources.fazenda;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(395, 108);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(498, 60);
+            this.label1.Location = new System.Drawing.Point(307, 250);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 23);
             this.label1.TabIndex = 7;
@@ -80,7 +85,7 @@
             // idProduto
             // 
             this.idProduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.idProduto.Location = new System.Drawing.Point(502, 86);
+            this.idProduto.Location = new System.Drawing.Point(311, 276);
             this.idProduto.Name = "idProduto";
             this.idProduto.Size = new System.Drawing.Size(124, 20);
             this.idProduto.TabIndex = 8;
@@ -89,7 +94,7 @@
             // botaoPesquisa
             // 
             this.botaoPesquisa.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoPesquisa.Location = new System.Drawing.Point(502, 132);
+            this.botaoPesquisa.Location = new System.Drawing.Point(245, 313);
             this.botaoPesquisa.Name = "botaoPesquisa";
             this.botaoPesquisa.Size = new System.Drawing.Size(124, 39);
             this.botaoPesquisa.TabIndex = 9;
@@ -102,7 +107,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(71, 256);
+            this.label2.Location = new System.Drawing.Point(154, 382);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(162, 23);
             this.label2.TabIndex = 10;
@@ -113,7 +118,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(71, 355);
+            this.label3.Location = new System.Drawing.Point(431, 382);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(163, 23);
             this.label3.TabIndex = 12;
@@ -124,7 +129,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(67, 447);
+            this.label4.Location = new System.Drawing.Point(139, 554);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(199, 23);
             this.label4.TabIndex = 14;
@@ -135,18 +140,18 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(64, 550);
+            this.label5.Location = new System.Drawing.Point(412, 554);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(202, 23);
+            this.label5.Size = new System.Drawing.Size(204, 23);
             this.label5.TabIndex = 16;
-            this.label5.Text = "Quantidade disponivel";
+            this.label5.Text = "Quantidade disponível";
             // 
             // mostrarNomeProduto
             // 
             this.mostrarNomeProduto.AutoSize = true;
             this.mostrarNomeProduto.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mostrarNomeProduto.ForeColor = System.Drawing.Color.White;
-            this.mostrarNomeProduto.Location = new System.Drawing.Point(269, 256);
+            this.mostrarNomeProduto.Location = new System.Drawing.Point(194, 419);
             this.mostrarNomeProduto.Name = "mostrarNomeProduto";
             this.mostrarNomeProduto.Size = new System.Drawing.Size(61, 23);
             this.mostrarNomeProduto.TabIndex = 17;
@@ -158,7 +163,7 @@
             this.mostrarPrecoProduto.AutoSize = true;
             this.mostrarPrecoProduto.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mostrarPrecoProduto.ForeColor = System.Drawing.Color.White;
-            this.mostrarPrecoProduto.Location = new System.Drawing.Point(275, 355);
+            this.mostrarPrecoProduto.Location = new System.Drawing.Point(488, 419);
             this.mostrarPrecoProduto.Name = "mostrarPrecoProduto";
             this.mostrarPrecoProduto.Size = new System.Drawing.Size(62, 23);
             this.mostrarPrecoProduto.TabIndex = 18;
@@ -170,7 +175,7 @@
             this.mostrarDescProduto.AutoSize = true;
             this.mostrarDescProduto.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mostrarDescProduto.ForeColor = System.Drawing.Color.White;
-            this.mostrarDescProduto.Location = new System.Drawing.Point(275, 447);
+            this.mostrarDescProduto.Location = new System.Drawing.Point(139, 595);
             this.mostrarDescProduto.Name = "mostrarDescProduto";
             this.mostrarDescProduto.Size = new System.Drawing.Size(55, 23);
             this.mostrarDescProduto.TabIndex = 19;
@@ -182,7 +187,7 @@
             this.mostrarQuantidadeProduto.AutoSize = true;
             this.mostrarQuantidadeProduto.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mostrarQuantidadeProduto.ForeColor = System.Drawing.Color.White;
-            this.mostrarQuantidadeProduto.Location = new System.Drawing.Point(275, 550);
+            this.mostrarQuantidadeProduto.Location = new System.Drawing.Point(497, 595);
             this.mostrarQuantidadeProduto.Name = "mostrarQuantidadeProduto";
             this.mostrarQuantidadeProduto.Size = new System.Drawing.Size(43, 23);
             this.mostrarQuantidadeProduto.TabIndex = 20;
@@ -192,7 +197,7 @@
             // alterarNomeTexto
             // 
             this.alterarNomeTexto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alterarNomeTexto.Location = new System.Drawing.Point(74, 305);
+            this.alterarNomeTexto.Location = new System.Drawing.Point(155, 462);
             this.alterarNomeTexto.Name = "alterarNomeTexto";
             this.alterarNomeTexto.Size = new System.Drawing.Size(161, 20);
             this.alterarNomeTexto.TabIndex = 21;
@@ -200,7 +205,7 @@
             // alterarNomeBotao
             // 
             this.alterarNomeBotao.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alterarNomeBotao.Location = new System.Drawing.Point(260, 295);
+            this.alterarNomeBotao.Location = new System.Drawing.Point(178, 501);
             this.alterarNomeBotao.Name = "alterarNomeBotao";
             this.alterarNomeBotao.Size = new System.Drawing.Size(107, 34);
             this.alterarNomeBotao.TabIndex = 22;
@@ -211,7 +216,7 @@
             // alterarPrecoBotao
             // 
             this.alterarPrecoBotao.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alterarPrecoBotao.Location = new System.Drawing.Point(257, 386);
+            this.alterarPrecoBotao.Location = new System.Drawing.Point(457, 501);
             this.alterarPrecoBotao.Name = "alterarPrecoBotao";
             this.alterarPrecoBotao.Size = new System.Drawing.Size(107, 34);
             this.alterarPrecoBotao.TabIndex = 24;
@@ -222,7 +227,7 @@
             // alterarPrecoTexto
             // 
             this.alterarPrecoTexto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alterarPrecoTexto.Location = new System.Drawing.Point(71, 396);
+            this.alterarPrecoTexto.Location = new System.Drawing.Point(432, 458);
             this.alterarPrecoTexto.Name = "alterarPrecoTexto";
             this.alterarPrecoTexto.Size = new System.Drawing.Size(161, 20);
             this.alterarPrecoTexto.TabIndex = 23;
@@ -230,7 +235,7 @@
             // alterarDescBotao
             // 
             this.alterarDescBotao.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alterarDescBotao.Location = new System.Drawing.Point(257, 490);
+            this.alterarDescBotao.Location = new System.Drawing.Point(178, 688);
             this.alterarDescBotao.Name = "alterarDescBotao";
             this.alterarDescBotao.Size = new System.Drawing.Size(107, 34);
             this.alterarDescBotao.TabIndex = 26;
@@ -241,7 +246,7 @@
             // alterarDescTexto
             // 
             this.alterarDescTexto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alterarDescTexto.Location = new System.Drawing.Point(71, 500);
+            this.alterarDescTexto.Location = new System.Drawing.Point(155, 639);
             this.alterarDescTexto.Name = "alterarDescTexto";
             this.alterarDescTexto.Size = new System.Drawing.Size(161, 20);
             this.alterarDescTexto.TabIndex = 25;
@@ -249,7 +254,7 @@
             // alterarQtdBotao
             // 
             this.alterarQtdBotao.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alterarQtdBotao.Location = new System.Drawing.Point(257, 593);
+            this.alterarQtdBotao.Location = new System.Drawing.Point(457, 688);
             this.alterarQtdBotao.Name = "alterarQtdBotao";
             this.alterarQtdBotao.Size = new System.Drawing.Size(107, 34);
             this.alterarQtdBotao.TabIndex = 28;
@@ -260,26 +265,239 @@
             // alterarQtdTexto
             // 
             this.alterarQtdTexto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alterarQtdTexto.Location = new System.Drawing.Point(71, 603);
+            this.alterarQtdTexto.Location = new System.Drawing.Point(435, 639);
             this.alterarQtdTexto.Name = "alterarQtdTexto";
             this.alterarQtdTexto.Size = new System.Drawing.Size(161, 20);
             this.alterarQtdTexto.TabIndex = 27;
             // 
             // mostrarImagem
             // 
-            this.mostrarImagem.Location = new System.Drawing.Point(524, 218);
+            this.mostrarImagem.Location = new System.Drawing.Point(213, 742);
             this.mostrarImagem.Name = "mostrarImagem";
-            this.mostrarImagem.Size = new System.Drawing.Size(489, 460);
+            this.mostrarImagem.Size = new System.Drawing.Size(339, 179);
             this.mostrarImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.mostrarImagem.TabIndex = 29;
             this.mostrarImagem.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::DesktopPIM.Properties.Resources.fazenda;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox1.Location = new System.Drawing.Point(457, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(395, 108);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 25F);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(437, 127);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(429, 39);
+            this.label6.TabIndex = 31;
+            this.label6.Text = "Gerenciamento de Produtos";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 25F);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(262, 187);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(223, 39);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "Alterar/Excluir";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 25F);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(812, 186);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(280, 39);
+            this.label8.TabIndex = 33;
+            this.label8.Text = "Adicionar Produto";
+            // 
+            // adicionarQtd
+            // 
+            this.adicionarQtd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.adicionarQtd.Location = new System.Drawing.Point(755, 502);
+            this.adicionarQtd.Name = "adicionarQtd";
+            this.adicionarQtd.Size = new System.Drawing.Size(161, 20);
+            this.adicionarQtd.TabIndex = 48;
+            // 
+            // adicionarDesc
+            // 
+            this.adicionarDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.adicionarDesc.Location = new System.Drawing.Point(1001, 415);
+            this.adicionarDesc.Name = "adicionarDesc";
+            this.adicionarDesc.Size = new System.Drawing.Size(161, 20);
+            this.adicionarDesc.TabIndex = 46;
+            // 
+            // botaoAdicionar
+            // 
+            this.botaoAdicionar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botaoAdicionar.Location = new System.Drawing.Point(844, 561);
+            this.botaoAdicionar.Name = "botaoAdicionar";
+            this.botaoAdicionar.Size = new System.Drawing.Size(202, 56);
+            this.botaoAdicionar.TabIndex = 45;
+            this.botaoAdicionar.Text = "Adicionar";
+            this.botaoAdicionar.UseVisualStyleBackColor = true;
+            this.botaoAdicionar.Click += new System.EventHandler(this.botaoAdicionar_Click);
+            // 
+            // adicionarPreco
+            // 
+            this.adicionarPreco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.adicionarPreco.Location = new System.Drawing.Point(755, 411);
+            this.adicionarPreco.Name = "adicionarPreco";
+            this.adicionarPreco.Size = new System.Drawing.Size(161, 20);
+            this.adicionarPreco.TabIndex = 44;
+            // 
+            // adicionarNome
+            // 
+            this.adicionarNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.adicionarNome.Location = new System.Drawing.Point(1001, 325);
+            this.adicionarNome.Name = "adicionarNome";
+            this.adicionarNome.Size = new System.Drawing.Size(161, 20);
+            this.adicionarNome.TabIndex = 42;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(737, 458);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(204, 23);
+            this.label13.TabIndex = 37;
+            this.label13.Text = "Quantidade disponível";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(984, 372);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(199, 23);
+            this.label14.TabIndex = 36;
+            this.label14.Text = "Descrição do produto";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(753, 372);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(163, 23);
+            this.label15.TabIndex = 35;
+            this.label15.Text = "Preço do produto";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(1000, 276);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(162, 23);
+            this.label16.TabIndex = 34;
+            this.label16.Text = "Nome do produto";
+            // 
+            // adicionarImagem
+            // 
+            this.adicionarImagem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.adicionarImagem.Location = new System.Drawing.Point(1001, 502);
+            this.adicionarImagem.Name = "adicionarImagem";
+            this.adicionarImagem.Size = new System.Drawing.Size(161, 20);
+            this.adicionarImagem.TabIndex = 50;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(1007, 458);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(150, 23);
+            this.label9.TabIndex = 49;
+            this.label9.Text = "URL da imagem";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // adicionarID
+            // 
+            this.adicionarID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.adicionarID.Location = new System.Drawing.Point(755, 325);
+            this.adicionarID.Name = "adicionarID";
+            this.adicionarID.Size = new System.Drawing.Size(161, 20);
+            this.adicionarID.TabIndex = 52;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(770, 276);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(131, 23);
+            this.label10.TabIndex = 51;
+            this.label10.Text = "ID do produto";
+            // 
+            // botaoExcluir
+            // 
+            this.botaoExcluir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botaoExcluir.Location = new System.Drawing.Point(384, 313);
+            this.botaoExcluir.Name = "botaoExcluir";
+            this.botaoExcluir.Size = new System.Drawing.Size(124, 39);
+            this.botaoExcluir.TabIndex = 53;
+            this.botaoExcluir.Text = "Excluir";
+            this.botaoExcluir.UseVisualStyleBackColor = true;
+            this.botaoExcluir.Click += new System.EventHandler(this.botaoExcluir_Click);
+            // 
+            // botaoVoltar
+            // 
+            this.botaoVoltar.Font = new System.Drawing.Font("Arial", 12F);
+            this.botaoVoltar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.botaoVoltar.Location = new System.Drawing.Point(20, 927);
+            this.botaoVoltar.Name = "botaoVoltar";
+            this.botaoVoltar.Size = new System.Drawing.Size(265, 61);
+            this.botaoVoltar.TabIndex = 54;
+            this.botaoVoltar.Text = "Voltar ao menu";
+            this.botaoVoltar.UseVisualStyleBackColor = true;
+            this.botaoVoltar.Click += new System.EventHandler(this.botaoVoltar_Click);
             // 
             // Gerenciamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.ClientSize = new System.Drawing.Size(1066, 867);
+            this.BackColor = System.Drawing.Color.DimGray;
+            this.ClientSize = new System.Drawing.Size(1275, 1061);
+            this.Controls.Add(this.botaoVoltar);
+            this.Controls.Add(this.botaoExcluir);
+            this.Controls.Add(this.adicionarID);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.adicionarImagem);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.adicionarQtd);
+            this.Controls.Add(this.adicionarDesc);
+            this.Controls.Add(this.botaoAdicionar);
+            this.Controls.Add(this.adicionarPreco);
+            this.Controls.Add(this.adicionarNome);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.mostrarImagem);
             this.Controls.Add(this.alterarQtdBotao);
             this.Controls.Add(this.alterarQtdTexto);
@@ -302,9 +520,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Gerenciamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerenciamento";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Gerenciamento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.mostrarImagem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -333,5 +553,23 @@
         private System.Windows.Forms.Button alterarQtdBotao;
         private System.Windows.Forms.TextBox alterarQtdTexto;
         private System.Windows.Forms.PictureBox mostrarImagem;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox adicionarQtd;
+        private System.Windows.Forms.TextBox adicionarDesc;
+        private System.Windows.Forms.Button botaoAdicionar;
+        private System.Windows.Forms.TextBox adicionarPreco;
+        private System.Windows.Forms.TextBox adicionarNome;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox adicionarImagem;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox adicionarID;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button botaoExcluir;
+        private System.Windows.Forms.Button botaoVoltar;
     }
 }

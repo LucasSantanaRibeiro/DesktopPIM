@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Gerenciamento.cs">
       <SubType>Form</SubType>
@@ -58,25 +58,43 @@
     <Compile Include="Gerenciamento.Designer.cs">
       <DependentUpon>Gerenciamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="GerenciamentoAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenciamentoAdm.Designer.cs">
+      <DependentUpon>GerenciamentoAdm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Produtos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produtos.Designer.cs">
+      <DependentUpon>Produtos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.aa.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Login.aa.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerenciamento.resx">
       <DependentUpon>Gerenciamento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GerenciamentoAdm.resx">
+      <DependentUpon>GerenciamentoAdm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produtos.resx">
+      <DependentUpon>Produtos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
