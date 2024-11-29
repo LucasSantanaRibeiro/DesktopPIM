@@ -266,5 +266,33 @@ namespace DesktopPIM
             menu.Show();
             this.Hide();
         }
+
+        private void alterarImagemBotao_Click(object sender, EventArgs e)
+        {
+
+            string id = idProduto.Text;
+            String novaImagem = alterarImagemTexto.Text;
+
+            using (SqlConnection conexao = new SqlConnection(conectarBD))
+            {
+                try
+                {
+                    conexao.Open();
+                    string query = "UPDATE Produto SET imagem='" + novaImagem + "'WHERE ID_produto=" + id;
+                    SqlCommand comando = new SqlCommand(query, conexao);
+                    SqlDataReader leitor = comando.ExecuteReader();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}");
+                }
+            }
+        }
+
+        private void adicionarImagem_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
