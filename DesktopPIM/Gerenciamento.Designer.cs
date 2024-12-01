@@ -288,7 +288,7 @@
             this.pictureBox1.BackgroundImage = global::DesktopPIM.Properties.Resources.fazenda;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(579, -2);
+            this.pictureBox1.Location = new System.Drawing.Point(635, -2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(395, 108);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -322,7 +322,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 25F);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(1061, 195);
+            this.label8.Location = new System.Drawing.Point(1086, 200);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(280, 39);
             this.label8.TabIndex = 33;
@@ -339,7 +339,7 @@
             // adicionarDesc
             // 
             this.adicionarDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.adicionarDesc.Location = new System.Drawing.Point(1250, 424);
+            this.adicionarDesc.Location = new System.Drawing.Point(1250, 420);
             this.adicionarDesc.Name = "adicionarDesc";
             this.adicionarDesc.Size = new System.Drawing.Size(161, 20);
             this.adicionarDesc.TabIndex = 46;
@@ -470,7 +470,7 @@
             // 
             this.botaoVoltar.Font = new System.Drawing.Font("Arial", 12F);
             this.botaoVoltar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.botaoVoltar.Location = new System.Drawing.Point(150, 778);
+            this.botaoVoltar.Location = new System.Drawing.Point(43, 45);
             this.botaoVoltar.Name = "botaoVoltar";
             this.botaoVoltar.Size = new System.Drawing.Size(265, 61);
             this.botaoVoltar.TabIndex = 54;
