@@ -470,7 +470,7 @@
             // 
             this.botaoVoltar.Font = new System.Drawing.Font("Arial", 12F);
             this.botaoVoltar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.botaoVoltar.Location = new System.Drawing.Point(43, 45);
+            this.botaoVoltar.Location = new System.Drawing.Point(34, 45);
             this.botaoVoltar.Name = "botaoVoltar";
             this.botaoVoltar.Size = new System.Drawing.Size(265, 61);
             this.botaoVoltar.TabIndex = 54;
